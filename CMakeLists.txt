@@ -16,10 +16,23 @@ endif()
 # ============================================
 
 # Per eseguire la versione sequenziale, decommenta questa riga:
- add_executable(ProgettoKMeans main.cpp)
+ #add_executable(ProgettoKMeans main.cpp)
 
 # Per eseguire la versione parallela v1, decommenta questa riga:
 #add_executable(ProgettoKMeans main_parallel_v1.cpp kmeans.h)
+
+# Per eseguire la versione parallela v2, decommenta questa riga:
+#add_executable(ProgettoKMeans main_parallel_v2.cpp kmeans.h)
+
+# Per eseguire la versione parallela v3, decommenta questa riga: -- NON BUONO --
+#add_executable(ProgettoKMeans main_parallel_v3.cpp kmeans.h)
+
+# Per eseguire la versione parallela v4, decommenta questa riga:
+add_executable(ProgettoKMeans main_parallel_v4.cpp kmeans.h)
+
+# Per eseguire la versione parallela v5, decommenta questa riga:
+#add_executable(ProgettoKMeans main_parallel_v5.cpp kmeans.h)
+
 
 # Collega le librerie (ridondante ma sicuro)
 target_link_libraries(ProgettoKMeans PRIVATE OpenMP::OpenMP_CXX)
